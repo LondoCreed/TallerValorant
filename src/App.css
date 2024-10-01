@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'Nasalization';
+    src: url('./nasalization-rg.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'Nasalization', sans-serif;
+  }
+
+
+  @keyframes flames {
+    0% { box-shadow: 0 0 15px rgba(255, 69, 0, 0.6), 0 0 30px rgba(255, 140, 0, 0.8); }
+    50% { box-shadow: 0 0 20px rgba(255, 69, 0, 0.8), 0 0 40px rgba(255, 140, 0, 1); }
+    100% { box-shadow: 0 0 15px rgba(255, 69, 0, 0.6), 0 0 30px rgba(255, 140, 0, 0.8); }
+  }
+  
+  .flame-effect:hover {
+    animation: flames 1s infinite;
+  }
